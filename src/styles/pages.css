@@ -1,0 +1,7 @@
+/* Styles propres aux pages : voir sections.css, portfolio.css, pages-info.css, legal.css et player.css. */
+.placeholder-note {
+  max-width: 40rem;
+  padding: 1.5rem;
+  border: 1px dashed var(--line);
+  color: var(--text-muted);
+}

@@ -1,0 +1,53 @@
+/* ---------- Logo : recadrage resserré du monogramme ----------
+   Exclut le haut des lettres « TIYA PRODS » qui apparaissait en bas de l'ancien recadrage.
+   Utilise la version WebP du logo (59 Ko). L'adresse est réécrite par Vite selon le « base » du site. */
+.brand__mark,
+.footer-brand__mark {
+  aspect-ratio: 785 / 500;
+  background-position: 45.27% 26.72%;
+  background-image: url('/images/logo-tiya-prods.webp');
+}
+
+/* ---------- Performance : l'image principale ne doit pas attendre une animation ---------- */
+.hero__visual.hero-in {
+  animation: none;
+  opacity: 1;
+}
+.hero-frame picture { display: contents; }
+
+/* ---------- Contrastes : texte noir sur dégradé doré ---------- */
+.btn--primary,
+.chip.is-active {
+  background: var(--gold-gradient-btn);
+}
+.chip.is-active .chip__count { color: rgba(5, 5, 5, 0.8); }
+
+/* ---------- États de chargement et d'erreur ---------- */
+.route-loading {
+  min-height: 60vh;
+  padding: calc(var(--header-h) + var(--space-5)) var(--gutter) var(--space-5);
+  font-size: 0.8rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+.route-error {
+  padding-top: calc(var(--header-h) + var(--space-5));
+  padding-bottom: var(--space-5);
+}
+.route-error__title { max-width: 18ch; font-size: var(--fs-h2); }
+.route-error__text { margin-top: 1rem; max-width: 36rem; color: var(--text-muted); }
+.route-error__actions { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2rem; }
+
+/* ---------- Utilitaire ---------- */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
