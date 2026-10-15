@@ -1,0 +1,51 @@
+:root {
+  /* Couleurs */
+  --black: #050505;
+  --anthracite-900: #0b0b0c;
+  --anthracite-800: #121214;
+  --anthracite-700: #1a1a1d;
+  --anthracite-600: #26262a;
+  --line: rgba(212, 162, 76, 0.22);
+  --line-soft: rgba(255, 255, 255, 0.08);
+
+  --gold-100: #f6e2b0;
+  --gold-300: #f0cf8a;
+  --gold-500: #d4a24c;
+  --gold-700: #8f6a25;
+  --gold-gradient: linear-gradient(120deg, #f6e2b0 0%, #d4a24c 45%, #8f6a25 100%);
+  /* Variante pour les fonds de boutons : garde un contraste suffisant avec le texte noir */
+  --gold-gradient-btn: linear-gradient(120deg, #f6e2b0 0%, #d4a24c 50%, #a67c2e 100%);
+
+  --text: #f3ede2;
+  --text-muted: #a39b8c;
+  --text-dim: #948e80;
+  --danger: #ff8f7a;
+
+  /* Typographie */
+  --font-display: 'Sora Variable', 'Sora', system-ui, sans-serif;
+  --font-body: 'Inter Variable', 'Inter', system-ui, sans-serif;
+
+  --fs-eyebrow: 0.75rem;
+  --fs-body: 1rem;
+  --fs-lead: clamp(1.05rem, 0.98rem + 0.4vw, 1.3rem);
+  --fs-h3: clamp(1.25rem, 1.1rem + 0.7vw, 1.65rem);
+  --fs-h2: clamp(1.9rem, 1.3rem + 2.8vw, 3.4rem);
+  --fs-h1: clamp(2.5rem, 1.4rem + 5.5vw, 6rem);
+
+  /* Espacements */
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2.5rem;
+  --space-5: 4rem;
+  --space-6: clamp(4.5rem, 3rem + 7vw, 9rem);
+
+  /* Mise en page */
+  --container: 1240px;
+  --gutter: clamp(1.25rem, 0.5rem + 3.5vw, 3rem);
+  --header-h: 72px;
+
+  /* Mouvement */
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --dur: 0.6s;
+}
