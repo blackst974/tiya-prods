@@ -58,6 +58,11 @@ export const videos = [
     featured: true,
   },
   {
+    title: 'Exorcisme de la chambre 17',
+    url: 'https://youtu.be/quSeXdnfmKE',
+    category: 'documentaire',
+  },
+  {
     title: 'Avatar AI Little girl',
     url: 'https://youtu.be/D_BTtesUaqk',
     category: 'avatar-ia',
