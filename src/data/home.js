@@ -60,7 +60,7 @@ export const expertises = [
     id: 'storytelling',
     title: 'Storytelling',
     description: "Une histoire, un ton, une structure : la narration au service de chaque vidéo.",
-    filter: null,
+    filter: 'storytelling',
   },
   {
     id: 'documentaires',

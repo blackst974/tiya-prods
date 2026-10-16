@@ -8,5 +8,6 @@ export const categories = [
   { id: 'vlog', label: 'Vlog' },
   { id: 'tutoriel', label: 'Tutoriel' },
   { id: 'ugc', label: 'UGC' },
+  { id: 'storytelling', label: 'Storytelling' },
   { id: 'autres', label: 'Autres vidéos' },
 ];

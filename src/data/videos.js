@@ -12,7 +12,7 @@
     featured: true,                        // facultatif : true = affichée sur l'accueil (6 maximum)
   },
 
-  Catégories : avatar-ia, publicites, clip-video, anime, documentaire, vlog, tutoriel, ugc, autres
+  Catégories : avatar-ia, publicites, clip-video, anime, documentaire, vlog, tutoriel, ugc, storytelling, autres
 
   L'ordre ci-dessous est l'ordre d'affichage. La première vidéo de « Toutes les vidéos » s'affiche en grand.
   Une entrée invalide est ignorée sans casser le site : la console du navigateur (npm run dev)
@@ -74,7 +74,7 @@ export const videos = [
   {
     title: 'Story',
     url: 'https://youtu.be/voUYFTQSUcU',
-    category: 'autres',
+    category: 'storytelling',
   },
   {
     title: 'New York City',

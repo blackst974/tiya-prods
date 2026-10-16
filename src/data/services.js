@@ -106,7 +106,7 @@ export const services = [
     ],
     formats: ['Scènes cinématographiques', 'Formats narratifs', 'Récits visuels'],
     projectType: 'storytelling',
-    filter: null,
+    filter: 'storytelling',
   },
   {
     id: 'documentaires-vlogs-tutoriels',
