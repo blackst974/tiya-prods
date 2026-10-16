@@ -1,0 +1,52 @@
+/* Visuels des services : une vraie miniature du portfolio quand elle existe.
+   Sans vidéo correspondante, le visuel graphique d'origine (numéro doré) est conservé. */
+
+.service__visual.has-image {
+  min-height: 0;
+  aspect-ratio: 16 / 9;
+  justify-content: space-between;
+  background: var(--anthracite-900);
+}
+.service__visual.has-image .service__img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 1.2s var(--ease);
+}
+.service__visual.has-image:hover .service__img { transform: scale(1.04); }
+
+.service__veil {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(5, 5, 5, 0.25) 0%, rgba(5, 5, 5, 0.82) 100%),
+    radial-gradient(ellipse at 90% 0%, rgba(212, 162, 76, 0.22), transparent 60%);
+}
+.service__visual.has-image .service__num,
+.service__visual.has-image .service__short,
+.service__visual.has-image .service__caption { position: relative; z-index: 1; }
+
+.service__caption {
+  max-width: 100%;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  overflow-wrap: anywhere;
+}
+
+@media (min-width: 960px) {
+  .service__visual.has-image {
+    aspect-ratio: 4 / 5;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 0.5rem;
+  }
+  .service__visual.has-image .service__num { margin-top: auto; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .service__visual.has-image .service__img { transition: none; }
+  .service__visual.has-image:hover .service__img { transform: none; }
+}
