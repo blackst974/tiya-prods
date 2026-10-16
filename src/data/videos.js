@@ -52,6 +52,12 @@ export const videos = [
     featured: true,
   },
   {
+    title: 'Les océans',
+    url: 'https://youtu.be/UQETJq-rN-c',
+    category: 'documentaire',
+    featured: true,
+  },
+  {
     title: 'Avatar AI Little girl',
     url: 'https://youtu.be/D_BTtesUaqk',
     category: 'avatar-ia',
@@ -69,6 +75,11 @@ export const videos = [
   {
     title: 'La Nativité',
     url: 'https://youtu.be/w6n_rjk2ReU',
+    category: 'anime',
+  },
+  {
+    title: 'Capitaine Zoom',
+    url: 'https://youtu.be/Z4GtNWl3idE',
     category: 'anime',
   },
   {
@@ -95,6 +106,11 @@ export const videos = [
     title: 'Pub TV minceur',
     url: 'https://youtu.be/uqeAhwl9MVw',
     category: 'publicites',
+  },
+  {
+    title: 'Extrait clip',
+    url: 'https://youtu.be/j4DyuhSczNg',
+    category: 'clip-video',
   },
   {
     title: 'Tutoriel',
