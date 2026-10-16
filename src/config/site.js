@@ -6,7 +6,7 @@ export const site = {
 
   // À RENSEIGNER : URL finale du site, sans slash final (ex. https://tiyaprods.pages.dev).
   // Si le site est publié dans un sous-répertoire, incluez-le (ex. https://nom.github.io/nom-du-depot).
-  url: '',
+  url: 'https://blackst974.github.io/tiya-prods',
 
   // E-mail professionnel de contact (formulaire de contact, mentions légales, confidentialité).
   email: 'tiya.prods@gmail.com',
