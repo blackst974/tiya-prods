@@ -59,9 +59,9 @@ export default function Hero() {
             <span className="hero-frame__corner hero-frame__corner--bl" aria-hidden="true" />
             <span className="hero-frame__corner hero-frame__corner--br" aria-hidden="true" />
           </div>
-          <figcaption className="hero__caption">
-            {hasVideo ? 'Bande démo — lue via YouTube après votre clic' : 'Bande démo — à venir'}
-          </figcaption>
+          {hasVideo && (
+            <figcaption className="hero__caption">Bande démo — lue via YouTube après votre clic</figcaption>
+          )}
         </figure>
       </div>
     </section>
