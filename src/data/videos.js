@@ -59,7 +59,7 @@ export const videos = [
   },
   {
     title: 'Exorcisme de la chambre 17',
-    url: 'https://youtu.be/quSeXdnfmKE',
+    url: 'https://youtu.be/CBO1qkvHRak',
     category: 'documentaire',
   },
   {
