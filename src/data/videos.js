@@ -63,6 +63,11 @@ export const videos = [
     category: 'documentaire',
   },
   {
+    title: 'Doc criminel',
+    url: 'https://youtu.be/YwZsRHHiBNA',
+    category: 'documentaire',
+  },
+  {
     title: 'Avatar AI Little girl',
     url: 'https://youtu.be/D_BTtesUaqk',
     category: 'avatar-ia',
