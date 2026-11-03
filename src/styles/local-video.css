@@ -1,0 +1,12 @@
+/* Lecteur vidéo hébergé sur le site : la vidéo remplit le cadre sans être rognée. */
+.yt-player__stage video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  object-fit: contain;
+}
+.hero-frame .yt-player__stage video {
+  object-fit: contain;
+}
