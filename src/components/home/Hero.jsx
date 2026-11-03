@@ -1,15 +1,18 @@
 import Button from '../ui/Button.jsx';
 import YouTubePlayer from '../ui/YouTubePlayer.jsx';
+import LocalVideoPlayer from '../ui/LocalVideoPlayer.jsx';
 import { site } from '../../config/site.js';
 import { showreel } from '../../data/home.js';
 import { buildYouTubeMedia } from '../../utils/youtube.js';
 import { asset } from '../../utils/assetPath.js';
 
-// Bande démo : uniquement si l'URL YouTube de data/home.js est valide.
-const showreelMedia = showreel.url ? buildYouTubeMedia(showreel.url) : null;
+// Vidéo d'intro : un fichier du site (showreel.file) a priorité sur un lien YouTube (showreel.url).
+const localSrc = showreel.file ? asset(showreel.file) : '';
+const localPoster = showreel.poster ? asset(showreel.poster) : '';
+const youtubeMedia = !localSrc && showreel.url ? buildYouTubeMedia(showreel.url) : null;
 
 export default function Hero() {
-  const hasVideo = Boolean(showreelMedia);
+  const hasVideo = Boolean(localSrc || youtubeMedia);
 
   return (
     <section className="hero" aria-labelledby="hero-title">
@@ -34,12 +37,14 @@ export default function Hero() {
 
         <figure className="hero__visual hero-in" style={{ '--d': '300ms' }}>
           <div className={`hero-frame ${hasVideo ? 'hero-frame--video' : ''}`}>
-            {hasVideo ? (
+            {localSrc ? (
+              <LocalVideoPlayer src={localSrc} poster={localPoster} title="Intro TIYA PRODS" />
+            ) : youtubeMedia ? (
               <YouTubePlayer
                 compact
-                media={showreelMedia}
-                title="Bande démo TIYA PRODS"
-                thumbs={[showreelMedia.thumbMax, showreelMedia.thumbHq]}
+                media={youtubeMedia}
+                title="Intro TIYA PRODS"
+                thumbs={[youtubeMedia.thumbMax, youtubeMedia.thumbHq]}
               />
             ) : (
               <picture>
@@ -59,8 +64,11 @@ export default function Hero() {
             <span className="hero-frame__corner hero-frame__corner--bl" aria-hidden="true" />
             <span className="hero-frame__corner hero-frame__corner--br" aria-hidden="true" />
           </div>
-          {hasVideo && (
-            <figcaption className="hero__caption">Bande démo — lue via YouTube après votre clic</figcaption>
+          {localSrc && (
+            <figcaption className="hero__caption">Intro TIYA PRODS — lecture avec le son</figcaption>
+          )}
+          {youtubeMedia && (
+            <figcaption className="hero__caption">Intro — lue via YouTube après votre clic</figcaption>
           )}
         </figure>
       </div>
