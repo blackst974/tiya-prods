@@ -1,13 +1,11 @@
-// Bande démo (facultative) : colle l'adresse d'une vidéo YouTube. Laisse vide tant que tu n'en as pas.
-// Exemple : url: 'https://www.youtube.com/watch?v=XXXXXXXXXXX'
-// Vide : le logo est affiché à la place, avec la mention « Bande démo — à venir ».
+// Vidéo d'introduction affichée sur la page d'accueil (lecteur YouTube chargé après un clic).
+// Pour la changer : remplace l'adresse. Pour la retirer : laisse l'adresse vide (le logo s'affiche alors).
 export const showreel = {
-  url: '',
+  url: 'https://youtu.be/3rZZ7iQYHjs',
 };
 
 // true  = la section « Sélection de réalisations » disparaît tant qu'aucun projet n'est mis en avant.
 // false = elle affiche un état vide soigné (pratique pendant la construction).
-// Conseil : passe à true avant la publication si tu n'as pas encore de réalisations.
 export const hideFeaturedWhenEmpty = false;
 
 export const pillars = [
