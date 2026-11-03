@@ -1,7 +1,12 @@
-// Vidéo d'introduction affichée sur la page d'accueil (lecteur YouTube chargé après un clic).
-// Pour la changer : remplace l'adresse. Pour la retirer : laisse l'adresse vide (le logo s'affiche alors).
+// Vidéo d'introduction affichée sur la page d'accueil.
+//  - file   : fichier vidéo du site (dans public/videos/). Prioritaire sur url.
+//  - poster : image affichée avant la lecture (dans public/thumbnails/).
+//  - url    : lien YouTube (solution de repli). Laisse vide si tu utilises un fichier.
+// Tout vide : le logo est affiché à la place.
 export const showreel = {
-  url: 'https://youtu.be/3rZZ7iQYHjs',
+  file: '/videos/intro.mp4',
+  poster: '/thumbnails/intro.jpg',
+  url: '', // ancien lien YouTube : https://youtu.be/3rZZ7iQYHjs
 };
 
 // true  = la section « Sélection de réalisations » disparaît tant qu'aucun projet n'est mis en avant.
